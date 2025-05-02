@@ -1,0 +1,61 @@
+'use client';
+import { useState } from 'react';
+import styles from './HeaderComponent.module.css';
+import { HiOutlinePhone, HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
+import { useRouter } from 'next/navigation';
+
+
+interface HeaderProps {
+  setSection?: (section: string) => void;
+}
+
+
+
+const menuItems = [
+  'CEILING', 'GYPSUM CEILING', 'GYPSUM CEILING MATERIAL',
+  'SUSPENDED CEILING', 'MOULDINGS', 'ARTISTIC MOULDINGS', 'CEILING ACCESSORIES', 'FLOORING',
+  'VINYL PLANK FLOORING', 'ENGINEERED HARDWOOD FLOORING', 'BAMBOO FLOORING', 'DOORS & GATES',
+  'STEEL SECURITY DOORS', 'SECTIONAL GARAGE DOORS', 'COMMERCIAL ROLL-UP SHUTTER GATES',
+  'AUTOMATIC GATE OPENERS', 'WINDOW /DOOR ROLL-UP SHUTTER', 'OTHER PRODUCTS', 'FINANCING',
+  'PVC LAMINATED WOODEN DOORS', 'DOORS WITHOUT GLASS'
+];
+
+export default function HeaderComponent({ setSection }: HeaderProps) {
+  const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleClick = (item: string) => {
+    const slug = item.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    router.push(`/?product=${slug}`);
+    setMenuOpen(false);
+  };
+
+
+  return (
+    <header className={styles.header}>
+      <div className={styles.logo}>PIONARE</div>
+
+      <div className={styles.actions}>
+        <button className={styles.iconBtn}><HiOutlinePhone /></button>
+        <button className={styles.iconBtn}>→</button>
+        <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
+        </button>
+      </div>
+
+      {menuOpen && (
+        <div className={styles.menuBackdrop} onClick={() => setMenuOpen(false)}>
+          <div className={`${styles.fullMenuOverlay} ${styles.slideIn}`} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.menuItems}>
+              {menuItems.map((item, index) => (
+                <span key={index} className={styles.navItem} onClick={() => handleClick(item)}>
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}

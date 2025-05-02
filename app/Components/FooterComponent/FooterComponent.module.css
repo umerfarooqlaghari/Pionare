@@ -1,0 +1,132 @@
+.footer {
+    background-color: #004d1a;
+    color: #fff;
+    padding: 60px 40px 30px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .topSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+    padding-bottom: 40px;
+  }
+  
+  .leftBlock {
+    max-width: 500px;
+  }
+  
+  .potency {
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .email {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .navLinks {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  
+  .navLinks li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .rightBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    gap: 30px;
+  }
+  
+  .getStartedBox {
+    background-color:rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .getStartedBox button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .office h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .office p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.4;
+  }
+  
+  .bottomSection {
+    margin-top: 30px;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+  
+  @media (max-width: 768px) {
+    .topSection {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  
+    .leftBlock,
+    .rightBlock {
+      max-width: 100%;
+      text-align: left;
+    }
+  
+    .email {
+      font-size: 20px;
+      word-break: break-word;
+    }
+  
+    .logo {
+      font-size: 36px;
+    }
+  
+    .getStartedBox {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .bottomSection {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 12px;
+      gap: 10px;
+      text-align: left;
+    }
+  }
+  

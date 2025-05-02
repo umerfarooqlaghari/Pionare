@@ -1,0 +1,76 @@
+.section {
+    scroll-margin-top: 100px;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    padding: 80px 20px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .serviceRow {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .serviceRow:hover {
+    background-color: #004d1a;
+    color: white;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .left h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .left p {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .right {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+  }
+  
+  /* Overlay animation */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #004d1a;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .showOverlay {
+    animation: slideToRight 0.7s forwards;
+  }
+  
+  @keyframes slideToRight {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
