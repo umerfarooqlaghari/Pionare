@@ -36,8 +36,6 @@ export default function HeaderComponent({ setSection }: HeaderProps) {
       <div className={styles.logo}>PIONARE</div>
 
       <div className={styles.actions}>
-        <button className={styles.iconBtn}><HiOutlinePhone /></button>
-        <button className={styles.iconBtn}>→</button>
         <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
         </button>
