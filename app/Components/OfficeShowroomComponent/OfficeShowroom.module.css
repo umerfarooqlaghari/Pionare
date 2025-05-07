@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hotspot {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .dot {
+    width: 16px;
+    height: 16px;
+    background-color: #d4af37; /* Luxurious gold */
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8); /* soft glow */
+    position: relative;
+    z-index: 10;
+    transition: transform 0.2s ease;
+  }
+  
+  .dot:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  .tooltip {
+    position: absolute;
+    top: -80px;
+    left: -20px;
+    width: 180px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .hotspot:hover .tooltip {
+    opacity: 1;
+  }
+  
