@@ -1,0 +1,108 @@
+.contactSection {
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.contactContainer {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.left {
+  flex: 1;
+  padding: 40px;
+}
+
+.left h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form button {
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: #333;
+}
+
+.right {
+  flex: 1;
+  background: #004d1a;
+  color: Black;
+  padding: 40px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.right h2 {
+ font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+
+}
+
+.right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right li {
+  margin-bottom: 18px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.right li span {
+  font-weight: 600;
+  color: #cdeac0;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.socials {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}

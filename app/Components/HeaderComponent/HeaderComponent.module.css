@@ -38,6 +38,10 @@
     font-size: 24px;
     cursor: pointer;
   }
+
+  .hamburger:hover {
+  color: #007f5f;
+}
   
   .menuBackdrop {
     position: fixed;
@@ -93,6 +97,21 @@
   .navItem:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+  .phoneIcon {
+  font-size: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: left;
+  transition: color 0.3s ease;
+}
+
+.phoneIcon:hover {
+  color: #007f5f;
+}
+
   
   @media (max-width: 768px) {
     .fullMenuOverlay {

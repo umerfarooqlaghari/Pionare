@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from './HeaderComponent.module.css';
 import { HiOutlinePhone, HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import { useRouter } from 'next/navigation';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 interface HeaderProps {
@@ -35,7 +36,12 @@ export default function HeaderComponent({ setSection }: HeaderProps) {
     <header className={styles.header}>
       <div className={styles.logo}>PIONARE</div>
 
-      <div className={styles.actions}>
+ <div className={styles.actions}>
+        {/* 📞 Contact Icon */}
+        <div className={styles.phoneIcon} onClick={() => router.push('/contact')}>
+          <i className="bi bi-telephone-inbound"></i>
+        </div>
+
         <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
         </button>

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import 'aframe';
 
 export default function Tour360Viewer() {
   useEffect(() => {

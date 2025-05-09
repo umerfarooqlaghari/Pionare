@@ -8,7 +8,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "types": ["node"],
-    "typeRoots": ["./types", "./node_modules/@types"],
+    "typeRoots": ["./types", "./node_modules/@types", "./app/types"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,

@@ -1,6 +1,8 @@
 'use client';
 import Link from 'next/link';
 import styles from './FooterComponent.module.css';
+import { span } from 'framer-motion/client';
+import router from 'next/router';
 
 export default function FooterComponent() {
   return (
@@ -14,7 +16,7 @@ export default function FooterComponent() {
        <a href="contact">
         <div className={styles.rightBlock}>
         
-          <div className={styles.getStartedBox}>
+          <div className={styles.getStartedBox}  onClick={() => router.push('/contact')}>
           <span>Contact us, </span>
             <button> Through here →</button>
           </div>
