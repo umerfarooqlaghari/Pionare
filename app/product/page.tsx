@@ -1,13 +1,14 @@
 'use client'
-export const dynamic = 'force-dynamic';
-
+import { Suspense } from 'react';
 import ProductViewer from "../Components/ProductViewerComponent/ProductViewer";
 
 export default function Home()
 {
   return (
 <>
+<Suspense>
 <ProductViewer/>
+</Suspense>
 </>
 
   );
