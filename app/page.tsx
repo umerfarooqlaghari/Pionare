@@ -22,7 +22,6 @@ export default function Home() {
         <>
           <HeroComponent /> 
           <ProductsComponent />
-          <ShowroomComponent/>
           <FooterComponent />
         </>
       )}

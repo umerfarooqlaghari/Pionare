@@ -17,8 +17,8 @@ const menuItems = [
   'SUSPENDED CEILING', 'MOULDINGS', 'ARTISTIC MOULDINGS', 'CEILING ACCESSORIES', 'FLOORING',
   'VINYL PLANK FLOORING', 'ENGINEERED HARDWOOD FLOORING', 'BAMBOO FLOORING', 'DOORS & GATES',
   'STEEL SECURITY DOORS', 'SECTIONAL GARAGE DOORS', 'COMMERCIAL ROLL-UP SHUTTER GATES',
-  'AUTOMATIC GATE OPENERS', 'WINDOW /DOOR ROLL-UP SHUTTER', 'OTHER PRODUCTS', 'FINANCING',
-  'PVC LAMINATED WOODEN DOORS', 'DOORS WITHOUT GLASS'
+  'AUTOMATIC GATE OPENERS', 'WINDOW /DOOR ROLL-UP SHUTTER',
+  'PVC LAMINATED WOODEN DOORS', 'DOORS WITHOUT GLASS', 'OTHER PRODUCTS'
 ];
 
 export default function HeaderComponent({ setSection }: HeaderProps) {
@@ -38,6 +38,10 @@ export default function HeaderComponent({ setSection }: HeaderProps) {
 
  <div className={styles.actions}>
         {/* 📞 Contact Icon */}
+
+                 <div className={styles.phoneIcon} onClick={() => router.push('/finance')}>
+          <i className="bi bi-bank"></i>
+        </div>
         <div className={styles.phoneIcon} onClick={() => router.push('/contact')}>
           <i className="bi bi-telephone-inbound"></i>
         </div>

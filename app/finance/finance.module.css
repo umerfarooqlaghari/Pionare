@@ -1,0 +1,62 @@
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom right,rgb(122, 203, 203), #d9f99d);
+}
+
+.heading {
+  color: #dc2626;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #1f2937;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.partner {
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.italicNote {
+  font-style: italic;
+  color: #374151;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.requirementsBox {
+  background-color:rgb(255, 255, 255);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listHeading {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.list {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.quickApproval {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.terms {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #4b5563;
+}

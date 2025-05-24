@@ -22,10 +22,10 @@ const products = [
   { number: '17', title: 'COMMERCIAL ROLL-UP SHUTTER GATES', subtitle: '', right: '' },
   { number: '18', title: 'AUTOMATIC GATE OPENERS', subtitle: '', right: '' },
   { number: '19', title: 'WINDOW /DOOR ROLL-UP SHUTTER', subtitle: '', right: '' },
-  { number: '20', title: 'OTHER PRODUCTS', subtitle: '', right: '' },
-  { number: '21', title: 'FINANCING', subtitle: '', right: '' },
   { number: '22', title: 'PVC LAMINATED WOODEN DOORS', subtitle: '', right: '' },
   { number: '23', title: 'DOORS WITHOUT GLASS', subtitle: '', right: '' },
+  { number: '20', title: 'OTHER PRODUCTS', subtitle: '', right: '' },
+
 ];
 
 export default function ProductsComponent() {
