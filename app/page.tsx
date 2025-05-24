@@ -5,6 +5,8 @@ import HeaderComponent from "./Components/HeaderComponent/HeaderComponent";
 import HeroComponent from "./Components/HeroComponent/HeroComponent";
 import ProductsComponent from "./Components/ProductComponent/ProductsComponent";
 import ProductViewer from './Components/ProductViewerComponent/ProductViewer';
+import { Suspense } from 'react';
+
 
 
 export default function Home() {
@@ -16,7 +18,9 @@ export default function Home() {
       <HeaderComponent />
 
       {activeProduct ? (
-        <ProductViewer />
+ <Suspense fallback={<div>Loading product...</div>}>
+          <ProductViewer />
+        </Suspense>
       ) : (
         <>
           <HeroComponent /> 
