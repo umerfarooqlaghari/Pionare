@@ -51,19 +51,29 @@ export default function HeaderComponent({ setSection }: HeaderProps) {
         </button>
       </div>
 
-      {menuOpen && (
-        <div className={styles.menuBackdrop} onClick={() => setMenuOpen(false)}>
-          <div className={`${styles.fullMenuOverlay} ${styles.slideIn}`} onClick={(e) => e.stopPropagation()}>
-            <div className={styles.menuItems}>
-              {menuItems.map((item, index) => (
-                <span key={index} className={styles.navItem} onClick={() => handleClick(item)}>
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
+{menuOpen && (
+  <div className={styles.menuBackdrop} onClick={() => setMenuOpen(false)}>
+    <div className={`${styles.fullMenuOverlay} ${styles.slideIn}`} onClick={(e) => e.stopPropagation()}>
+      
+      {/* Back Button Header */}
+      <div className={styles.menuHeader}>
+        <button className={styles.backButton} onClick={() => setMenuOpen(false)}>
+          <HiOutlineX />
+          Back
+        </button>
+      </div>
+
+      <div className={styles.menuItems}>
+        {menuItems.map((item, index) => (
+          <span key={index} className={styles.navItem} onClick={() => handleClick(item)}>
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+
     </header>
   );
 }
