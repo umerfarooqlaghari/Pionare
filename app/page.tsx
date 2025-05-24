@@ -5,7 +5,6 @@ import HeaderComponent from "./Components/HeaderComponent/HeaderComponent";
 import HeroComponent from "./Components/HeroComponent/HeroComponent";
 import ProductsComponent from "./Components/ProductComponent/ProductsComponent";
 import ProductViewer from './Components/ProductViewerComponent/ProductViewer';
-import ShowroomComponent from './Components/ShowroomComponent/ShowroomSection';
 
 
 export default function Home() {
